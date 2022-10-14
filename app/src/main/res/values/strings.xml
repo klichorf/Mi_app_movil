@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="txv_usuario">User</string>
+    <string name="edt_usuario">User input</string>
+    <string name="txv_clave">Password</string>
+    <string name="edit_clave">******</string>
+    <string name="txt_boton">Enter</string>
+
+</resources>
+
