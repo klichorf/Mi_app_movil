@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
-
-
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -14,44 +13,80 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="800px">
+        android:layout_height="800px"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
 
         <ImageView
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/logo_1"
+            android:src="@drawable/logo"
 
             />
-        
-
-        
-        
-        
-        
-        
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="800px">
-
-
-        <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="match_parent">
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="match_parent">
-
-        </LinearLayout>
 
 
     </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:text="Ingrese su usuario"
+        android:translationX="100px"
+        android:translationY="100px" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="900px"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/edt_usuario"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text=""
+        android:translationX="100px"
+        android:translationY="100px"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:text="ingrese contraseña"
+        android:translationX="100px"
+        android:translationY="100px" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="900px"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/edit_clave"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:translationX="100px"
+        android:translationY="100px"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="400px"
+        android:layout_height="200px"
+        android:backgroundTint="#500A4F"
+        android:text="Ingresar"
+        android:translationX="100px"
+        android:translationY="100px"
+        app:cornerRadius="20dp"
+
+
+        />
 
 
 </LinearLayout>
+
+
+
+
+
+

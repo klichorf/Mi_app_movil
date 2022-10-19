@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Tu estilo</string>
     <string name="txv_usuario">Usuario</string>
     <string name="edt_usuario">Ingrese usuario</string>
     <string name="txv_clave">Clave</string>
