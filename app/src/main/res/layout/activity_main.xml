@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
@@ -14,8 +13,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="800px"
-        android:orientation="vertical"
-        android:layout_margin="10dp">
+        android:layout_margin="10dp"
+        android:orientation="vertical">
 
         <ImageView
 
@@ -48,7 +47,7 @@
         android:minHeight="48dp"
         android:text=""
         android:translationX="100px"
-        android:translationY="100px"/>
+        android:translationY="100px" />
 
     <TextView
         android:id="@+id/textView2"
@@ -67,7 +66,7 @@
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:translationX="100px"
-        android:translationY="100px"/>
+        android:translationY="100px" />
 
     <Button
         android:id="@+id/button"
