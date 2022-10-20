@@ -6,21 +6,30 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="800px"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:layout_weight="20"
+        android:orientation="vertical"
+
+
+        >
+
 
         <ImageView
 
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+
+            android:contentDescription="@string/app_name"
             android:src="@drawable/logo"
+
 
             />
 
@@ -28,58 +37,76 @@
     </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="135dp"
-        android:layout_height="wrap_content"
-        android:baselineAligned="false"
-        android:text="Ingrese su usuario"
-        android:translationX="100px"
-        android:translationY="100px" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="900px"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/edt_usuario"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text=""
-        android:translationX="100px"
-        android:translationY="100px" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="136dp"
-        android:layout_height="wrap_content"
-        android:text="ingrese contraseña"
-        android:translationX="100px"
-        android:translationY="100px" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="900px"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/edit_clave"
-        android:inputType="textPassword"
-        android:minHeight="48dp"
-        android:translationX="100px"
-        android:translationY="100px" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="400px"
-        android:layout_height="200px"
-        android:backgroundTint="#500A4F"
-        android:text="Ingresar"
-        android:translationX="100px"
-        android:translationY="100px"
-        app:cornerRadius="20dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_weight="90"
 
 
-        />
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:baselineAligned="false"
+            android:text="@string/txv_usuario"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <EditText
+
+
+            android:id="@+id/editTextPersonName"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autofillHints="password"
+            android:ems="10"
+            android:hint="@string/edt_usuario"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#757575" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/txv_clave"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:autofillHints="password"
+            android:ems="10"
+            android:hint="@string/edit_clave"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#500A4F"
+            android:text="@string/txt_boton"
+            app:cornerRadius="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+
+
+            />
+
+    </LinearLayout>
 
 
 </LinearLayout>

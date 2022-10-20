@@ -3,9 +3,10 @@
     <string name="app_name">Tu estilo</string>
     <string name="txv_usuario">Usuario</string>
     <string name="edt_usuario">Ingrese usuario</string>
-    <string name="txv_clave">Clave</string>
+    <string name="txv_clave">Ingrese contraseña</string>
     <string name="edit_clave">******</string>
-    <string name="txt_boton">Entar</string>
+    <string name="txt_boton">Ingresar</string>
+
 
 
 </resources>

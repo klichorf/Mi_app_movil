@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Tu estilo</string>
+    <string name="app_name">Your Style</string>
     <string name="txv_usuario">User</string>
     <string name="edt_usuario">User input</string>
     <string name="txv_clave">Password</string>
