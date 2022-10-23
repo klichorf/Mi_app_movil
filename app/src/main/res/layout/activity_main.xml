@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
@@ -12,7 +11,8 @@
     tools:context=".MainActivity">
 
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/perimera_capa"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"
@@ -24,18 +24,19 @@
 
 
         <ImageView
-
+            android:id="@+id/imagen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:contentDescription="@string/app_name"
             android:src="@drawable/logo"
+            app:layout_constraintTop_toTopOf="@id/perimera_capa"
+
 
 
             />
 
 
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <LinearLayout
@@ -54,6 +55,8 @@
             android:layout_marginBottom="10dp"
             android:baselineAligned="false"
             android:text="@string/txv_usuario"
+
+
 
             />
 
@@ -114,9 +117,9 @@
             android:layout_marginBottom="10dp"
             android:baselineAligned="false"
             android:text="@string/txt_remember"
+            android:textColor="#2196F3"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="#2196F3"/>
+            android:textStyle="bold" />
 
 
         <TextView
@@ -128,11 +131,9 @@
             android:layout_marginBottom="10dp"
             android:baselineAligned="false"
             android:text="@string/txt_registrarse"
+            android:textColor="#2196F3"
             android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="#2196F3"/>
-
-
+            android:textStyle="bold" />
 
 
     </LinearLayout>
