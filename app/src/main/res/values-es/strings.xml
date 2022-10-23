@@ -6,6 +6,8 @@
     <string name="txv_clave">Ingrese contraseña</string>
     <string name="edit_clave">******</string>
     <string name="txt_boton">Ingresar</string>
+    <string name="txt_remember">Recupere su contraseña ó usuario</string>
+    <string name="txt_registrarse">Registrese</string>
 
 
 

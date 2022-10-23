@@ -5,6 +5,8 @@
     <string name="txv_clave">Password</string>
     <string name="edit_clave">******</string>
     <string name="txt_boton">Enter</string>
+    <string name="txt_remember">Forgot your password or username?</string>
+    <string name="txt_registrarse">Register</string>
 
 </resources>
 
