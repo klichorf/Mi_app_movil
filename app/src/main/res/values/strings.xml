@@ -4,9 +4,32 @@
     <string name="edt_usuario">User input</string>
     <string name="txv_clave">Password</string>
     <string name="edit_clave">******</string>
+    <string name="edit_Confirmar_Clave">******</string>
     <string name="txt_boton">Enter</string>
     <string name="txt_remember">Forgot your password or username?</string>
     <string name="txt_registrarse">Register</string>
+
+    <string name="edtxtform">User Form</string>
+    <string name="names">Names</string>
+    <string name="edtxtnames">Type names</string>
+    <string name="edtxtlastnames">Type Lastname</string>
+
+    <string name="edtxtemail">email</string>
+
+
+    <string name="txt_ConfirmPasword">Comfirm Password</string>
+
+
+    <string name="edtxt_PhoneNumber">Phone Number</string>
+
+    <string name="txt_agree">Accept Terms And Conditions </string>
+    <string name="txt_agreeterms">Agree </string>
+
+    <string name="txt_createUser">Create User</string>
+
+
+
+
 
 </resources>
 
