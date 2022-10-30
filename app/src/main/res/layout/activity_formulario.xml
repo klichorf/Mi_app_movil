@@ -136,14 +136,14 @@
 
 
     <CheckBox
-        android:id="@+id/checkBoxTERMS"
+        android:id="@+id/TERMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/txt_agreeterms" />
 
     <Button
-        android:id="@+id/buttonREGIST"
+        android:id="@+id/btnBack"
         android:layout_width="150dp"
         android:layout_height="63dp"
         android:layout_gravity="center"

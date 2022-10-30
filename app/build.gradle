@@ -1,11 +1,14 @@
-plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
-}
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+
+
 
 android {
     namespace 'com.example.myapplication'
     compileSdk 33
+
 
     defaultConfig {
         applicationId "com.example.myapplication"
@@ -30,6 +33,22 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+
+
+    buildFeatures{
+
+        viewBinding = true
+    }
+
+
+
+
+
+
+
+
+
 }
 
 dependencies {
