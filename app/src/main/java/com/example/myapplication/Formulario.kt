@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -14,43 +15,36 @@ class Formulario : AppCompatActivity() {
         btnBack.setOnClickListener { checkValue() }
 
 
-//        TERMS.setOnClickListener { checkagree() }
-
-
-
     }
 
-    fun checkValue(){
+
+    fun checkValue() {
         if (editTxtNAMES.text.isNotEmpty() && editTxtLASTNAMES.text.isNotEmpty() && editTxtMAIL.text.isNotEmpty() && editTxtNEWPASSWORD.text.isNotEmpty()
-            && editTxtCONFIRMPASSW.text.isNotEmpty()  && editTxtPHONE.text.isNotEmpty())
+            && editTxtCONFIRMPASSW.text.isNotEmpty() && editTxtPHONE.text.isNotEmpty()
+        ) {
 
-        // vamos a una nueva pantalla
-        else{
+            val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra("HOLA_MUNDO", btnBack.text)
+            startActivity(intent)
+            Toast.makeText(this, " Successful registration", Toast.LENGTH_SHORT).show()
+
+
+
+            // vamos a una nueva pantalla
+        } else {
+
             showErrorName()
+
         }
     }
 
 
-    fun showErrorName(){
-        Toast.makeText(this," field empty",Toast.LENGTH_SHORT).show()
+    fun showErrorName() {
+        Toast.makeText(this, " field empty", Toast.LENGTH_SHORT).show()
     }
+}
 
 
-
-
-
-/*    fun checkagree(){
-        if (TERMS.text.isNotEmpty() )
-
-        // vamos a una nueva pantalla
-        else{
-            showErrorcheckagree()
-        }
-    }
-
-    fun showErrorcheckagree(){
-        Toast.makeText(this," Accept the terms and conditions",Toast.LENGTH_SHORT).show()}
-*/    }
 
 
 

@@ -32,6 +32,7 @@
     <string name="contactar">Contact Us</string>
     <string name="enviar">Send</string>
     <string name="versi_n">Version</string>
+    <string name="txt.boton2">Help</string>
 
 
 </resources>
