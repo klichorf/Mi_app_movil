@@ -7,7 +7,10 @@ import android.sax.StartElementListener
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -40,51 +43,38 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
-
     fun login(btnentrar: View) {
 
         // validaciones con credenciales
-        if (editTxtUSR!!.text.toString() == "hello word") {
+        if (editTxtUSR!!.text.toString() == "hello" && editTextPassword!!.text.toString() == "klichorf123") {
 
-            if (editTextPassword!!.text.toString() == "klichorf123") {
-
-            }
             val nombre_variable = Intent(this, MainActivity2::class.java)
             startActivity(nombre_variable)
 
-        }
-
-        else{
+        } else {
             Toast.makeText(this, "Datos incorrectos", Toast.LENGTH_SHORT).show()
 
 
-
         }
 
     }
 
 
-
-
-
-
-
-        fun actividaddos(botondos: View) {
-            val objeto3 = Intent(this, MainActivity2::class.java)
-            startActivity(objeto3)
-        }
-
-        fun regist(btnnewuser: View) {
-            val objeto = Intent(this, Formulario::class.java)
-            startActivity(objeto)
-        }
-
-
-        fun usuario_toast() {
-
-            Toast.makeText(this, "ingrese usuario", Toast.LENGTH_SHORT).show()
-        }
-
-
+    fun actividaddos(botondos: View) {
+        val objeto3 = Intent(this, MainActivity2::class.java)
+        startActivity(objeto3)
     }
+
+    fun regist(btnnewuser: View) {
+        val objeto = Intent(this, Formulario::class.java)
+        startActivity(objeto)
+    }
+
+
+    fun usuario_toast() {
+
+        Toast.makeText(this, "ingrese usuario", Toast.LENGTH_SHORT).show()
+    }
+
+
+}
