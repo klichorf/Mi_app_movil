@@ -11,10 +11,10 @@ import com.example.myapplication.SuperHero
 
 class SuperHeroViewHolder (view: View):RecyclerView.ViewHolder(view){   //8. realizo la extencion
 
-    val superHero=view.findViewById<TextView>(R.id.tvsuperheroname) //10.ACCEDO A LAS VISTAS DEL NOMBRE DEL SUPERHERO
-    val realname=view.findViewById<TextView>(R.id.tvrealname)
-    val publisher=view.findViewById<TextView>(R.id.tvpublisher)
-    val photo=view.findViewById<ImageView>(R.id.ivsuperhero)
+    private val superHero=view.findViewById<TextView>(R.id.tvsuperheroname) //10.ACCEDO A LAS VISTAS DEL NOMBRE DEL SUPERHERO
+    private val realname=view.findViewById<TextView>(R.id.tvrealname)
+    private val publisher=view.findViewById<TextView>(R.id.tvpublisher)
+    private val photo=view.findViewById<ImageView>(R.id.ivsuperhero)
 
 
 
@@ -23,7 +23,9 @@ class SuperHeroViewHolder (view: View):RecyclerView.ViewHolder(view){   //8. rea
           realname.text=superHeromodel.realName
           publisher.text=superHeromodel.publisher
 
-          Glide.with(photo.context).load(superHeromodel.photo).into(photo)//12. incliyo la foto luego de instalar la libreria
+        Glide.with(photo.context).load(superHeromodel.photo).into(photo)
+
+          //Glide.with(photo.context).load(superHeromodel.photo).into(photo)//12. incliyo la foto luego de instalar la libreria
           //13. voy a maifesta para los permisos
 
     }

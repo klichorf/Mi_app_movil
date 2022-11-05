@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.reciclerview.adapter.SuperHeroAdapter
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,6 +32,8 @@ class MainActivity : AppCompatActivity() {
 
         editTxtUSR = findViewById(R.id.editTxtUSR) // concatenación parte grafica con lógica
         editTextPassword = findViewById(R.id.editTextPassword)
+
+
 
 
     }
@@ -77,4 +80,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-}
+
+
+
+    }

@@ -132,6 +132,13 @@ class MainActivity2 : AppCompatActivity() {
 
 
 
+    fun reciclervista(btnrecicler: View) {
+        val vistareciclerview = Intent(this, MainActivity3::class.java)
+        startActivity(vistareciclerview)
+    }
+
+
+
 
 
 
